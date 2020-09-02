@@ -16,6 +16,7 @@ getMovies = async () => {
     },
   } =  await axios.get('https://yts-proxy.now.sh/list_movies.json?sort_by=rating');
   // this.setState({ movies: movies }) state movies와 변수 movies가 같다. 고로 아래와 같이 사용할 수 있다.
+  // axios.get으로 가져온 데이터를 state값에 대입한다.
   this.setState({ movies, isLoading: false })
 }
 componentDidMount(){
