@@ -6,7 +6,7 @@ import './Home.css';
 class Home extends React.Component {
 state = {
   isLoading: true,
-  movie: [],
+  movie: [], //가지고온 데이터는 Array의 형태로, 왼쪽과 같이 []로 공간을 만들어 주어야 한다.
 };
 getMovies = async () => {
   // const movies =  await axios.get('https://yts-proxy.now.sh/list_movies.json');
