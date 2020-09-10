@@ -1,26 +1,7 @@
 import React from 'react';
 
-// function Detail(props){
-//     console.log(props);
-//     return(
-//         <span>hello</span>
-//     )
-// }
-
 class Detail extends React.Component{
-
     componentDidMount(){
-        const candyMachine = {
-            status: {
-                name: "none",
-                count: 5,
-            },
-            getCandy(){
-                this.status.count--;
-                return this.status.count;
-            }
-        }
-
         const { location, history } = this.props;
 
         if(location.state === undefined){

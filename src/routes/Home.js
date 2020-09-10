@@ -24,7 +24,7 @@ componentDidMount(){
 }
 
   render() {
-    const { isLoading, movies } = this.state;
+    const { isLoading, movies } = this.state; 
 
     return (
       <section className="container">
@@ -53,3 +53,5 @@ componentDidMount(){
 }
 
 export default Home;
+
+// const { data : { data : { movies } } }
