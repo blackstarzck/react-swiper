@@ -4,6 +4,7 @@ import './Movie.css';
 import { Link } from 'react-router-dom';
 
 function Movie({ title, summary, year, poster, genres }){
+    console.log(title)
     return (
         <div className="movie">
             <Link to={{
