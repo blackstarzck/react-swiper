@@ -7,7 +7,7 @@ function Movie({ title, summary, year, poster, genres }){
     return (
         <div className="movie">
             <Link to={{
-                pathname: '/movie-detail',
+                pathname: '/movie-details',
                 state: { year, title, summary, poster, genres },
             }}>
             <img src={poster} alt={poster} title={title} />

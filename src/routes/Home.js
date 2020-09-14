@@ -18,13 +18,14 @@ getMovies = async () => {
   // this.setState({ movies: movies }) state movies와 변수 movies가 같다. 고로 아래와 같이 사용할 수 있다.
   // axios.get으로 가져온 데이터를 state값에 대입한다.
   this.setState({ movies, isLoading: false })
+  console.log(movies)
 }
 componentDidMount(){
   this.getMovies();
 }
 
   render() {
-    const { isLoading, movies } = this.state; 
+    const { isLoading, movies } = this.state;
 
     return (
       <section className="container">
